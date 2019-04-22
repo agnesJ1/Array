@@ -27,6 +27,9 @@ import java.util.stream.IntStream;
 public class Main {
     public static void main(String[] args) {
         int[] anArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        float Average;
+
+
 
         // allocates memory for 10 integers
         anArray = new int[10];
@@ -40,15 +43,21 @@ public class Main {
 
 
 // Compute sum
-        int sum = 0;
+        int n, sum = 0;
         for (int i = 0; i < 10; i++) {
             sum += (i + 1);
             sum += 0;
+            Average = (float)sum / 10;
+            System.out.println("Average:"+Average);
+
+
 
 // Print the result
+
+            System.out.println("Enter Number: " + anArray[i]);
+
+
             System.out.println(sum);
-
-
         }
     }
 }
